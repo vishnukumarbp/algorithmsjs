@@ -1,6 +1,25 @@
 # algorithms in js
 Learning algorithms and examples in js
 
+## Topics learned under Algorithms
+
+### Big O notation:
+
+**Time complexity:** Time taken to run/execute the algorithm/program with input to the function as "n"
+
+**Space complexity:** Amount of memory/space taken by the program while execution with respect to the input length "n"
+
+Auxiliary space is the temporary or extra space used by the algorithm while it is being executed. Space complexity of an algorithm is commonly expressed using Big O (O(n))(O(n)) notation.**
+##### Most commonly used notations are*
+* Linear O(n)
+* Quadratic O(n^2)
+* Constant O(1)
+* Lograithmic O(log n)
+
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--q9gaD0m_--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3ms2d5rfv25a2swyz1vs.png)
+
+
 
 ## Problem solving patterns
 
