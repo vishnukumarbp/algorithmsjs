@@ -21,12 +21,11 @@ Auxiliary space is the temporary or extra space used by the algorithm while it i
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--q9gaD0m_--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3ms2d5rfv25a2swyz1vs.png)
 
 
-**Note: Rules of thumb: **
+**Note: Rules of thumb:**
 - Constants doesnt matter:
 O(2n) => O(n),
 O(1000) => O(1),
 O(10n^2) => O(n^2)
-
 - Smaller terms doesnt matter:
 O(2n + 10) => O(n),
 O(n^2 + 1000) => O(n^2),
