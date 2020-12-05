@@ -1,15 +1,16 @@
 # algorithms in js
 Learning algorithms and examples in js
 
-## Topics learned under Algorithms
 
-### Big O notation:
+#### Topics learned under Algorithms
+##### Big O notation:
+*Talk formally about how the runtime of an algorithm grows as the input grows*
 
 **Time complexity:** Time taken to run/execute the algorithm/program with input to the function as "n"
 
-**Space complexity:** Amount of memory/space taken by the program while execution with respect to the input length "n"
-
+**Space complexity:** Amount of memory/space taken by the program while execution with respect to the input length "n". In most cases, when we say space complexity we talk about auxiliary space.
 Auxiliary space is the temporary or extra space used by the algorithm while it is being executed. Space complexity of an algorithm is commonly expressed using Big O (O(n))(O(n)) notation.**
+
 ##### Most commonly used notations are*
 * Linear O(n)
 * Quadratic O(n^2)
@@ -19,6 +20,24 @@ Auxiliary space is the temporary or extra space used by the algorithm while it i
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--q9gaD0m_--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3ms2d5rfv25a2swyz1vs.png)
 
+
+**Note: Rules of thumb: **
+- Constants doesnt matter:
+O(2n) => O(n),
+O(1000) => O(1),
+O(10n^2) => O(n^2)
+
+- Smaller terms doesnt matter:
+O(2n + 10) => O(n),
+O(n^2 + 1000) => O(n^2),
+O(10n^2 + 100n + 2) => O(n^2)
+
+##### Big O Shorthands:
+
+- Arithmatic operations are constants
+- Assignments are constants
+- Accessing elements in an array or keys in an object are constants
+- In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop (O(n^2))
 
 
 ## Problem solving patterns
