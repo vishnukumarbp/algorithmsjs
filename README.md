@@ -76,9 +76,17 @@ O(10n^2 + 100n + 2) => O(n^2)
 
 
 
-
 References:
 [Stack overflow answer with example for each complexities](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly/36877205#36877205)
+
+
+
+## Problem solving
+1. Understand the problem
+2. Explore the concrete example
+3. Break it down
+4. Solve/Simplyfy
+5. Look back and refactor
 
 
 ## Problem solving patterns
