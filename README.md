@@ -11,6 +11,36 @@ Learning algorithms and examples in js
 **Space complexity:** Amount of memory/space taken by the program while execution with respect to the input length "n". In most cases, when we say space complexity we talk about auxiliary space.
 Auxiliary space is the temporary or extra space used by the algorithm while it is being executed. Space complexity of an algorithm is commonly expressed using Big O (O(n))(O(n)) notation.**
 
+
+**In JS:**
+
+- Most primitive types (boolean, numbers, undefined, null) are constant space
+- String type are linear O(n) - where n is the length of a string
+- Reference types are linear too O(n) where, for arrays: n is the length of the array, and for objects: n is the number of keys in an object
+
+**Examples:**
+Space complexity in the here is: O(2) as there are two assignments, which will be shortend to **O(1)**
+```javascript
+function addUpTo(n) {
+    let total = 0;
+    for (let i = 1; i <= n; i++) {
+        total += i;
+    }
+    return total;
+}
+```
+
+Space complexity in the here is: O(n + 2) as there are two assignments, which will be shortend to **O(n)**
+```javascript
+function double(arr) {
+    let newArray = []; // newArray => 1 
+    for (let i = 0; i <= arr.lengtn; i++) { // let i => 2
+        newArray.push(2 * arr[i]); // n items in the array
+    }
+    return total;
+}
+```
+
 ##### Most commonly used notations are*
 * Linear O(n)
 * Quadratic O(n^2)
