@@ -1,5 +1,5 @@
-# algorithmsjs-
-Learning algorithms in js
+# algorithmsjs
+Learning algorithms and examples in js
 
 
 ## Problem solving patterns
