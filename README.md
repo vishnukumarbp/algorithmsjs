@@ -14,10 +14,10 @@ Time: O(N)
 
 #### **Sample Input:**
 
-- Samefrequency(182,281) // True
-- Samefrequency(34,14) // False
-- Samefrequency(3589578, 5879385) // True
-- Samefrequency(22,222) // False
+- sameFrequency(182,281) // True
+- sameFrequency(34,14) // False
+- sameFrequency(3589578, 5879385) // True
+- sameFrequency(22,222) // False
 
 #### **Solution:**
 
