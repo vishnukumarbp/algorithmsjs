@@ -1,9 +1,9 @@
 # algorithms in js
 Learning algorithms and examples in js
 
+### Topics under Algorithms
 
-#### Topics learned under Algorithms
-##### Big O notation:
+#### Big O notation:
 *Talk formally about how the runtime of an algorithm grows as the input grows*
 
 **Time complexity:** Time taken to run/execute the algorithm/program with input to the function as "n"
@@ -67,6 +67,10 @@ O(10n^2 + 100n + 2) => O(n^2)
 - Assignments are constants
 - Accessing elements in an array or keys in an object are constants
 - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop (O(n^2))
+
+
+References:
+[Stack overflow answer with example for each complexities](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly/36877205#36877205)
 
 
 ## Problem solving patterns
