@@ -19,6 +19,7 @@ Auxiliary space is the temporary or extra space used by the algorithm while it i
 - Reference types are linear too O(n) where, for arrays: n is the length of the array, and for objects: n is the number of keys in an object
 
 **Examples:**
+
 Space complexity in the here is: O(2) as there are two assignments, which will be shortend to **O(1)**
 ```javascript
 function addUpTo(n) {
@@ -67,6 +68,13 @@ O(10n^2 + 100n + 2) => O(n^2)
 - Assignments are constants
 - Accessing elements in an array or keys in an object are constants
 - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop (O(n^2))
+
+<img src="https://user-images.githubusercontent.com/10495294/101241427-e1fc8700-371b-11eb-89a4-96a337061ae9.png" alt="Big O of object" width="350" height="200">
+
+
+<img src="https://user-images.githubusercontent.com/10495294/101241500-a4e4c480-371c-11eb-8bce-518e11b97b73.png" alt="Big O of object" width="350" height="200">
+
+
 
 
 References:
