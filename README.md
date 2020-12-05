@@ -2,7 +2,6 @@
 Learning algorithms in js
 
 
-
 ## Problem solving patterns
 
 #### Frequency counter:
@@ -15,10 +14,10 @@ Time: O(N)
 
 ###### **Sample Input:**
 
-> sameFrequency(182,281) // true
-> sameFrequency(34,14) // false
-> sameFrequency(3589578, 5879385) // true
-> sameFrequency(22,222) // false
+-  samefrequency(182,281) // true
+- samefrequency(34,14) // false
+- samefrequency(3589578, 5879385) // true
+- samefrequency(22,222) // false
 
 ###### **Solution:**
 
