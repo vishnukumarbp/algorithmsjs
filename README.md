@@ -6,11 +6,11 @@ Learning algorithms and examples in js
 
 ### Frequency counter & Multiple pointers:
 
-#### Problem - sameFrequency
-Frequency Counter - Samefrequencywrite A Function Called Samefrequency. Given Two Positive Integers, Find Out If The Two Numbers Have The Same Frequency Of Digits.
+#### Problem - Frequency counter - sameFrequency
+Write a function called sameFrequency. Given two positive integers, find out if the two numbers have the same frequency of digits.
 
-Your Solution Must Have The Following Complexities:
-Time: O(N)
+Your solution must have the following complexities:
+Time: O(n)
 
 #### **Sample Input:**
 
@@ -52,8 +52,8 @@ Implement a function called, areThereDuplicates which accepts a variable number 
 
 You can solve this using the frequency counter pattern OR the multiple pointers pattern.
 
-Restrictions: Time - O(n) Space - O(n)
-Bonus: Time - O(n log n)Space - O(1)
+Restrictions: Time - O(n), Space - O(n)
+Bonus: Time - O(n log n), Space - O(1)
 
 #### **Sample Input:**
 
@@ -112,7 +112,7 @@ Write a function called averagePair. Given a sorted array of integers and a targ
 There may be more than one pair that matches the average target.
 
 Bonus Constraints:
-Time: O(N)
+Time: O(n)
 Space: O(1)
 
 #### **Sample Input:**
@@ -141,12 +141,12 @@ function averagePair(arr, num){
 
 
 #### Problem - Multiple Pointers - isSubsequence
-Write A Function Called Issubsequence Which Takes In Two Strings And Checks Whether The Characters In The First String Form A Subsequence Of The Characters In The Second String. 
-In Other Words, The Function Should Check Whether The Characters In The First String Appear Somewhere In The Second String, Without Their Order Changing.
+Write a function called isSubsequence which takes in two strings and checks whether the characters in the first string form a subsequence of the characters in the second string.
+in other words, the function should check whether the characters in the first string appear somewhere in the second string, without their order changing.
 
-Your Solution Must Have At Least The Following Complexities: 
-Time Complexity - O(N + M)
-Space Complexity - O(1)
+Your solution must have at least the following complexities: 
+Time complexity - O(n + m)
+Space complexity - O(1)
 
 #### **Sample Input:**
 
@@ -193,7 +193,7 @@ Given an array of integers and a number, write a function called maxSubarraySum,
 Note that a subarray must consist of consecutive elements from the original array. In the first example below, [100, 200, 300] is a subarray of the original array, but [100, 300] is not.
 
 Your solution must have at least the following complexities:
-Time complexity - O(N)
+Time complexity - O(n)
 Space complexity - O(1)
 
 #### **Sample Input:**
