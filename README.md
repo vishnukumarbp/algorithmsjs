@@ -49,7 +49,7 @@ function double(arr) {
 * Lograithmic O(log n)
 
 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--q9gaD0m_--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3ms2d5rfv25a2swyz1vs.png" alt="Big O timing graph" width="400" height="400">
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--q9gaD0m_--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/3ms2d5rfv25a2swyz1vs.png" alt="Big O timing graph" width="550" height="400">
 
 
 **Note: Rules of thumb:**
