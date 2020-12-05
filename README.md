@@ -4,22 +4,22 @@ Learning algorithms in js
 
 ## Problem solving patterns
 
-#### Frequency counter:
+### Frequency counter:
 
-##### Problem - sameFrequency
-Frequency Counter - sameFrequencyWrite a function called sameFrequency. Given two positive integers, find out if the two numbers have the same frequency of digits.
+#### Problem - sameFrequency
+Frequency Counter - Samefrequencywrite A Function Called Samefrequency. Given Two Positive Integers, Find Out If The Two Numbers Have The Same Frequency Of Digits.
 
-Your solution MUST have the following complexities:
+Your Solution Must Have The Following Complexities:
 Time: O(N)
 
-###### **Sample Input:**
+#### **Sample Input:**
 
--  samefrequency(182,281) // true
-- samefrequency(34,14) // false
-- samefrequency(3589578, 5879385) // true
-- samefrequency(22,222) // false
+- Samefrequency(182,281) // True
+- Samefrequency(34,14) // False
+- Samefrequency(3589578, 5879385) // True
+- Samefrequency(22,222) // False
 
-###### **Solution:**
+#### **Solution:**
 
 ```javascript
 function sameFrequency(num1, num2){
