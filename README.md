@@ -1,4 +1,4 @@
-# algorithmsjs
+# algorithms in js
 Learning algorithms and examples in js
 
 
