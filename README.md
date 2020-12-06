@@ -93,6 +93,9 @@ References:
 
 ### Frequency counter & Multiple pointers:
 
+### Frequency counter:
+This pattern uses objects or set to store the frequency of a value to avoid nester loop (O(n^2)).
+
 #### Problem - Frequency counter - sameFrequency
 Write a function called sameFrequency. Given two positive integers, find out if the two numbers have the same frequency of digits.
 
@@ -194,6 +197,10 @@ function areThereDuplicates() {
 ```
 
 
+### Multiple Pointers:
+Creating pointers or values that correspond to an index or position and move towards beginning, end or middle based on a certain conditions
+
+
 #### Problem - Multiple Pointers - averagePair
 Write a function called averagePair. Given a sorted array of integers and a target average, determine if there is a pair of values in the array where the average of the pair equals the target average. 
 There may be more than one pair that matches the average target.
@@ -273,6 +280,8 @@ function isSubsequence(str1, str2) {
 
 
 ### Sliding Window:
+This pattern involves creating a window which can be either an array or number from one position to another. Based on a certain condition, the window either increases or closes (a new window is created). This pattern is very effect when we have to create a subset of an array/string.
+
 
 #### Problem - Sliding Window - maxSubarraySum
 Given an array of integers and a number, write a function called maxSubarraySum, which finds the maximum sum of a subarray with the length of the number passed to the function. 
@@ -401,3 +410,18 @@ function findLongestSubstring(str) {
   return longest;
 }
 ```
+
+### Divide and conquer
+This is pattern involves in dividing a data set into smaller chunk and applying the process on the subset of data.
+
+This pattern can tremendously **decreases time complexity**
+
+For eg: 
+**Problem:** Find the index of 88 from given the **sorted** input array [1,2,8,19,20,34,56,82,88,93,95,96,102,120,150]
+In this case, instead of searching 88 in a loop starting from index 0 to array.length, we can apply divide and conquer pattern to improve the time complexity.
+
+i.e, divide the input by 2, and compare the middle element with the value to search, whether the value is greater than the middle element or less. 
+If value is greater than middle element, we reset the start to middle element, else, we reset the end to middle element. (which is like creating a subset),
+And continue the same steps, until we find the value we want.
+
+And we use this pattern for binary search, and the time complexity of the search is O(log n)
