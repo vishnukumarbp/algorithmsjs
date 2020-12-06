@@ -3,7 +3,7 @@ Learning algorithms and examples in js
 
 ### Topics under Algorithms
 
-#### Big O notation:
+## Big O notation:
 *Talk formally about how the runtime of an algorithm grows as the input grows*
 
 **Time complexity:** Time taken to run/execute the algorithm/program with input to the function as "n"
@@ -425,3 +425,44 @@ If value is greater than middle element, we reset the start to middle element, e
 And continue the same steps, until we find the value we want.
 
 And we use this pattern for binary search, and the time complexity of the search is O(log n)
+
+
+## Recursion
+A process (or a function) that call itself until it reaches the base case.
+
+**Objectives:**
+
+1. Define recursion and how to use
+2. Two essential components of recursion
+3. Visualize the call stack
+
+**It's Everywhere:**
+1. JSON.parse/JSON.stringify
+2. document.getElementById and DOM traversal algorithm
+3. Object traversal
+4. Mostly used in complex data strcuture algotithms
+5. Cleaner/Better alternative to iteration
+
+**Two essential components of recurstion:**
+1. base case ie, A case/situation when the recursion ends
+2. different input on each recursive calls
+
+
+**Call stack:**
+
+A stack data structure, and everytime a function is called, an entry is pushed, popped when function return a value or ends
+
+**Example**
+```javascript
+
+function countDown(num) {
+    if(num == 0){
+        console.log("Done!");
+        return false;
+    }
+    console.log(num);
+    num--;
+    countDown(num);
+}
+```
+
