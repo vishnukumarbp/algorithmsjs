@@ -473,8 +473,10 @@ function countDown(num) {
 It is a basic search. Starts searching for element from left to right linearly. Most of the inbuild methods of an array uses linear search algorithms, for eg: `indexOf`, `includes`, `find`, `findIndex`
 
 ## Binary Search
-Binary search works with sorted array, and it uses divide and conquer pattern to create subset at the end of the loop. This algorithm should be more efficient than linearSearch - you can read how to implement it here - 
-https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search and here
+Binary search works with sorted array, and it uses divide and conquer pattern to create subset at the end of the loop. This algorithm should be more efficient than linearSearch. Time complexity is O(1) - best case and O(log n) average and worst case.
+you can read how to implement it here
+https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search 
+and here 
 https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
 
 #### **Problem:**
@@ -486,8 +488,8 @@ Write a function called binarySearch which accepts a sorted array and a value an
 - binarySearch([1,2,3,4,5],5) // 4
 - binarySearch([1,2,3,4,5],6) // -1
 - binarySearch([5, 6, 10, 13, 14, 18, 30, 34, 35, 37, 40, 44, 64, 79, 84, 86, 95, 96, 98, 99], 10) // 2
-- binarySearch([5, 6, 10, 13, 14, 18, 30, 34, 35, 37, 40, 44, 64, 79, 84, 86, 95, 96, 98, 99], 95) // 1
-- 6binarySearch([5, 6, 10, 13, 14, 18, 30, 34, 35, 37,   40, 44, 64, 79, 84, 86, 95, 96, 98, 99], 100) // -1"
+- binarySearch([5, 6, 10, 13, 14, 18, 30, 34, 35, 37, 40, 44, 64, 79, 84, 86, 95, 96, 98, 99], 95) // 16
+- binarySearch([5, 6, 10, 13, 14, 18, 30, 34, 35, 37,   40, 44, 64, 79, 84, 86, 95, 96, 98, 99], 100) // -1"
 
 
 #### **Solution:**
