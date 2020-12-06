@@ -17,6 +17,7 @@ Learning algorithms and examples in js
   * [Linear search](https://github.com/vishnukumarbp/algorithmsjs#linear-search)
   * [Binary search](https://github.com/vishnukumarbp/algorithmsjs#binary-search)
   * [Naive/Basic String Search](https://github.com/vishnukumarbp/algorithmsjs#naivebasic-string-search)
+  * [Kunth Moriss Pratt String matching algorithm]()
   
 
 ## Big O notation:
@@ -547,3 +548,10 @@ function subString(str, subStr) {
 
 console.log(subString("wnomgwnomg", "omg"));
 ```
+
+## Kunth Morris Pratt String matching algorithm
+This algorithm avoid the problem of backtracking the main index when matching wasnt found. Instead it creates pi table (or lps) and uses the to match string.
+Time complexity for this algorithm is,
+To prepare the table - m
+To match (parse through entire string n once) - n
+O (m + n)
