@@ -508,3 +508,26 @@ function binarySearch(arr, value) {
     return arr[middle] === value ? middle : -1;
 }
 ```
+
+## Naive/Basic String Search
+This is similar to sub string search using **Multiple pointer pattern**
+
+```javascript
+function subString(str, subStr) {
+    if(subStr.length > str.length)
+        return 0;
+    let count = 0;
+    for (let i = 0; i < str.length - (subStr.length - 1); i++) {
+        for (let j = 0; j < subStr.length; j++) {
+            if (str[i + j] !== subStr[j])
+                break;
+            if (j === subStr.length - 1)
+                count++;
+
+        }
+    }
+    return count;
+}
+
+console.log(subString("wnomgwnomg", "omg"));
+```
