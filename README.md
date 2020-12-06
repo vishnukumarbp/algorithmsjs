@@ -3,6 +3,22 @@ Learning algorithms and examples in js
 
 ### Topics under Algorithms
 
+- [Big O notation](https://github.com/vishnukumarbp/algorithmsjs#big-o-notation)
+  * [Most commonly used notations](https://github.com/vishnukumarbp/algorithmsjs#most-commonly-used-notations-are)
+  * [Big O shorthands](https://github.com/vishnukumarbp/algorithmsjs#big-o-shorthands)
+- [Problem solving](https://github.com/vishnukumarbp/algorithmsjs#problem-solving)
+- [Problem solving patterns](https://github.com/vishnukumarbp/algorithmsjs#problem-solving-patterns)
+  * [Frequency counter](https://github.com/vishnukumarbp/algorithmsjs#frequency-counter)
+  * [Multiple pointer](https://github.com/vishnukumarbp/algorithmsjs#multiple-pointers)
+  * [Sliding window](https://github.com/vishnukumarbp/algorithmsjs#sliding-window)
+  * [Divide and conquer](https://github.com/vishnukumarbp/algorithmsjs#divide-and-conquer)
+- [Recursion](https://github.com/vishnukumarbp/algorithmsjs#recursion)
+- [Searching algorithms](https://github.com/vishnukumarbp/algorithmsjs#searching-algorithms)
+  * [Linear search](https://github.com/vishnukumarbp/algorithmsjs#linear-search)
+  * [Binary search](https://github.com/vishnukumarbp/algorithmsjs#binary-search)
+  * [Naive/Basic String Search](https://github.com/vishnukumarbp/algorithmsjs#naivebasic-string-search)
+  
+
 ## Big O notation:
 *Talk formally about how the runtime of an algorithm grows as the input grows*
 
@@ -62,7 +78,7 @@ O(2n + 10) => O(n),
 O(n^2 + 1000) => O(n^2),
 O(10n^2 + 100n + 2) => O(n^2)
 
-##### Big O Shorthands:
+##### Big O shorthands:
 
 - Arithmatic operations are constants
 - Assignments are constants
