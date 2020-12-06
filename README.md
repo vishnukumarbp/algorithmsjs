@@ -526,7 +526,7 @@ function binarySearch(arr, value) {
 ```
 
 ## Naive/Basic String Search
-This is similar to sub string search using **Multiple pointer pattern**
+This is similar to sub string search using **Multiple pointer pattern**. Time complexity is O(mn) where m is the length of the substring and n is the length of the string
 
 ```javascript
 function subString(str, subStr) {
