@@ -759,6 +759,9 @@ Works by selection on element (called pivot) and its index where the pivot end u
 
 The logic behind this is, while selecting pivot value, system finds the right index for the pivot. so at the end of each pivot selection, we get the right index for the element and merge them together.
 
+Time complexity is, For average and best case: O(n log n) and worst case (for eg, when trying to sort already sorted array and choosing first element) O(n^2).
+Space complexity is O(log n)
+
 ```javascript
 
 function pivot(arr, start = 0, end = arr.length - 1) {
