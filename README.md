@@ -22,6 +22,7 @@ Learning algorithms and examples in js
   * [Bubble sort](https://github.com/vishnukumarbp/algorithmsjs#bubble-sort)
   * [Selection sort](https://github.com/vishnukumarbp/algorithmsjs#selection-sort)
   * [Insertion sort](https://github.com/vishnukumarbp/algorithmsjs#insertion-sort)
+  * [Comparision between elementary sortings](https://github.com/vishnukumarbp/algorithmsjs#comparision-between-elementary-sortings)
   
 
 ## Big O notation:
@@ -688,3 +689,9 @@ function insertionSort(arr){
 
 insertionSort([2,1,9,76,4])
 ```
+
+## Comparision between elementary sortings
+
+<img alt="Comparision between elementary sortings" src="https://user-images.githubusercontent.com/10495294/101311292-19337b00-3877-11eb-8ff0-8616f59c16f8.png" width="880" height="390" />
+
+Refer visual animation on [toptal](https://www.toptal.com/developers/sorting-algorithms)
