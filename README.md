@@ -701,8 +701,10 @@ Refer visual animation on [toptal](https://www.toptal.com/developers/sorting-alg
 ## Merge sort
 SPLIT + COMPARE/SORT + MERGE
 It build the sorted array, by splicting input array into array with size 0 or 1, and merge agarin the array in a sorted form. 
+
 Time complexity is O(n log n) - O(log n) for decomposition (spliting) and O(n) comparision per decomposition
 Space complexity is O(n). 
+
 It is way faster than the elementary sorting algorithms (bubble, insertion, seletion)
 
 **Example**
