@@ -23,6 +23,7 @@ Learning algorithms and examples in js
   * [Selection sort](https://github.com/vishnukumarbp/algorithmsjs#selection-sort)
   * [Insertion sort](https://github.com/vishnukumarbp/algorithmsjs#insertion-sort)
   * [Comparision between elementary sortings](https://github.com/vishnukumarbp/algorithmsjs#comparision-between-elementary-sortings)
+  * [Merge sort](https://github.com/vishnukumarbp/algorithmsjs#merge-sort)
   
 
 ## Big O notation:
@@ -692,6 +693,58 @@ insertionSort([2,1,9,76,4])
 
 ## Comparision between elementary sortings
 
-<img alt="Comparision between elementary sortings" src="https://user-images.githubusercontent.com/10495294/101311292-19337b00-3877-11eb-8ff0-8616f59c16f8.png" width="880" height="390" />
+<img alt="Comparision between elementary sortings" src="https://user-images.githubusercontent.com/10495294/101311292-19337b00-3877-11eb-8ff0-8616f59c16f8.png" width="640" height="320" />
 
 Refer visual animation on [toptal](https://www.toptal.com/developers/sorting-algorithms)
+
+
+## Merge sort
+It build the sorted array, by splicting input array into array with size 0 or 1, and merge agarin the array in a sorted form. 
+Time complexity is O(n log n) - O(log n) for decomposition (spliting) and O(n) comparision per decomposition
+Space complexity is O(n). 
+It is way faster than the elementary sorting algorithms (bubble, insertion, seletion)
+
+**Example**
+
+```javascript
+// Merge function from earlier
+function merge(arr1, arr2){
+    let results = [];
+    let i = 0;
+    let j = 0;
+    while(i < arr1.length && j < arr2.length){
+        if(arr2[j] > arr1[i]){
+            results.push(arr1[i]);
+            i++;
+        } else {
+            results.push(arr2[j])
+            j++;
+        }
+    }
+    while(i < arr1.length) {
+        results.push(arr1[i])
+        i++;
+    }
+    while(j < arr2.length) {
+        results.push(arr2[j])
+        j++;
+    }
+    return results;
+}
+
+// Recrusive Merge Sort
+function mergeSort(arr){
+    if(arr.length <= 1) return arr;
+    let mid = Math.floor(arr.length/2);
+    let left = mergeSort(arr.slice(0,mid));
+    let right = mergeSort(arr.slice(mid));
+    return merge(left, sright);
+}
+
+mergeSort([10,24,76,73])
+```
+
+**Visual explanation of how it is working**
+
+<img alt="merge sort" src="https://user-images.githubusercontent.com/10495294/101315348-6405c080-3880-11eb-9565-f3fe626f8321.png" width="640" height="320"/>
+
