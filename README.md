@@ -20,6 +20,7 @@ Learning algorithms and examples in js
   * [Kunth Moriss Pratt String matching algorithm](https://github.com/vishnukumarbp/algorithmsjs#kunth-morris-pratt-string-matching-algorithm)
 - [Sorting algorithms](https://github.com/vishnukumarbp/algorithmsjs#sorting-algorithms)
   * [Bubble sort](https://github.com/vishnukumarbp/algorithmsjs#bubble-sort)
+  * [Selection sort](https://github.com/vishnukumarbp/algorithmsjs#selection-sort)
   
 
 ## Big O notation:
@@ -588,7 +589,7 @@ function bubbleSort(arr) {
             }
         }
     }
-    console.log(arr);
+    return arr;
 }
 ```
 
@@ -610,6 +611,57 @@ function bubbleSort(arr) {
         }
         if(noSwap) break;
     }
-    console.log(arr);
+    return arr
 }
+```
+
+## Selection sort
+Similar to bubble sort, but instead of first placing large values in to sorted position, place the small value first.
+i.e, look for a min value each time the loop is execurted, and swap it with the initial position (initial position of unsorted values)
+
+
+**Basic version:**
+```javascript
+function selectionSort(arr) {
+    const swap = (idx1,idx2)=>{
+        [arr[idx1],arr[idx2]] = [arr[idx2], arr[idx1]];
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if(arr[i] > arr[j]){
+                swap(i, j);
+            }
+        }
+    }
+    return arr;
+}
+
+selectionSort([23, 12, 43, 22, 55, 1, 2, 5]);
+```
+
+
+**Optimized version:** Here we are going to swap only at the end of the first loop when lowest has changed. When this is the case, (swap when required), Selection sort is considered little better than bubble sort.
+```javascript
+function selectionSort(arr) {
+    let lowest;
+    const swap = (idx1,idx2)=>{
+        [arr[idx1],arr[idx2]] = [arr[idx2], arr[idx1]];
+    }
+    for (let i = 0; i < arr.length; i++) {
+        lowest = i
+        for (let j = i + 1; j < arr.length; j++) {
+            if(arr[lowest] > arr[j]){
+                lowest = j
+            }
+
+            console.log(arr, i, j)
+        }
+        if (i !== lowest) {
+            swap(i, lowest);
+        }
+    }
+    return arr
+}
+
+selectionSort([23, 12, 43, 22, 55, 1, 2, 5]);
 ```
