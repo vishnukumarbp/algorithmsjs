@@ -21,6 +21,7 @@ Learning algorithms and examples in js
 - [Sorting algorithms](https://github.com/vishnukumarbp/algorithmsjs#sorting-algorithms)
   * [Bubble sort](https://github.com/vishnukumarbp/algorithmsjs#bubble-sort)
   * [Selection sort](https://github.com/vishnukumarbp/algorithmsjs#selection-sort)
+  * [Insertion sort](https://github.com/vishnukumarbp/algorithmsjs#insertion-sort)
   
 
 ## Big O notation:
@@ -618,6 +619,7 @@ function bubbleSort(arr) {
 ## Selection sort
 Similar to bubble sort, but instead of first placing large values in to sorted position, place the small value first.
 i.e, look for a min value each time the loop is execurted, and swap it with the initial position (initial position of unsorted values)
+Time complexity is O(n^2)
 
 
 **Basic version:**
@@ -664,4 +666,25 @@ function selectionSort(arr) {
 }
 
 selectionSort([23, 12, 43, 22, 55, 1, 2, 5]);
+```
+
+## Insertion sort
+Builds up the sort by gradually creating larger left half, which is always sorted
+i.e take one element at a time and insert in the right position in the sorted subset
+Time complexity is O(n^2)
+
+```javascript
+function insertionSort(arr){
+	var currentVal;
+    for(var i = 1; i < arr.length; i++){
+        currentVal = arr[i];
+        for(var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
+            arr[j+1] = arr[j]
+        }
+        arr[j+1] = currentVal;
+    }
+    return arr;
+}
+
+insertionSort([2,1,9,76,4])
 ```
