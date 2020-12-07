@@ -24,6 +24,7 @@ Learning algorithms and examples in js
   * [Insertion sort](https://github.com/vishnukumarbp/algorithmsjs#insertion-sort)
   * [Comparision between elementary sortings](https://github.com/vishnukumarbp/algorithmsjs#comparision-between-elementary-sortings)
   * [Merge sort](https://github.com/vishnukumarbp/algorithmsjs#merge-sort)
+  * [Quick sort](https://github.com/vishnukumarbp/algorithmsjs#quick-sort)
   
 
 ## Big O notation:
@@ -572,11 +573,10 @@ To match (parse through entire string n once) - n
 ## Sorting algorithms
 Sorting is a process of arranging items in a collection (for eg: array) in ascending or decending order
 
+To visualize, refer [visualgo.net](https://visualgo.net/en)
 
 ## Bubble sort
 A sorting algorithm where the largest value bubble up to the top. Time complexity is O(n^2)
-
-To visualize, refer [visualgo.net](https://visualgo.net/en)
 
 **Basic algorithm:**
 
@@ -672,7 +672,7 @@ selectionSort([23, 12, 43, 22, 55, 1, 2, 5]);
 
 ## Insertion sort
 Builds up the sort by gradually creating larger left half, which is always sorted
-i.e take one element at a time and insert in the right position in the sorted subset
+i.e take one element at a time, compare it to the left and insert in the right position in the sorted subset
 Time complexity is O(n^2)
 
 ```javascript
@@ -699,6 +699,7 @@ Refer visual animation on [toptal](https://www.toptal.com/developers/sorting-alg
 
 
 ## Merge sort
+SPLIT + COMPARE/SORT + MERGE
 It build the sorted array, by splicting input array into array with size 0 or 1, and merge agarin the array in a sorted form. 
 Time complexity is O(n log n) - O(log n) for decomposition (spliting) and O(n) comparision per decomposition
 Space complexity is O(n). 
@@ -738,7 +739,7 @@ function mergeSort(arr){
     let mid = Math.floor(arr.length/2);
     let left = mergeSort(arr.slice(0,mid));
     let right = mergeSort(arr.slice(mid));
-    return merge(left, sright);
+    return merge(left, right);
 }
 
 mergeSort([10,24,76,73])
@@ -748,3 +749,46 @@ mergeSort([10,24,76,73])
 
 <img alt="merge sort" src="https://user-images.githubusercontent.com/10495294/101315348-6405c080-3880-11eb-9565-f3fe626f8321.png" width="640" height="320"/>
 
+## Quick sort
+COMPARE & FIND PIVOT INDEX + CREATE SUBSET + FIND PIVOT INDEX + MERGE
+Works by selection on element (called pivot) and its index where the pivot end up in the sorted array, and use the pivot to create two subset (left to pivot and right to pivot). Apply the same rule till the subset reaches to length 1.
+
+The logic behind this is, while selecting pivot value, system finds the right index for the pivot. so at the end of each pivot selection, we get the right index for the element and merge them together.
+
+```javascript
+
+function pivot(arr, start = 0, end = arr.length - 1) {
+  const swap = (arr, idx1, idx2) => {
+    [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
+  };
+
+  // We are assuming the pivot is always the first element
+  let pivot = arr[start];
+  let swapIdx = start;
+
+  for (let i = start + 1; i <= end; i++) {
+    if (pivot > arr[i]) {
+      swapIdx++;
+      swap(arr, swapIdx, i);
+    }
+  }
+
+  // Swap the pivot from the start the swapPoint
+  swap(arr, start, swapIdx);
+  return swapIdx;
+}
+
+
+function quickSort(arr, left = 0, right = arr.length -1){
+    if(left < right){
+        let pivotIndex = pivot(arr, left, right) //3
+        //left
+        quickSort(arr,left,pivotIndex-1);
+        //right
+        quickSort(arr,pivotIndex+1,right);
+      }
+     return arr;
+} 
+           
+console.log(quickSort([100,-3,2,4,6,9,1,2,5,3,23]));
+```
