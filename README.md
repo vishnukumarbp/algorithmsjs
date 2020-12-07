@@ -753,7 +753,9 @@ mergeSort([10,24,76,73])
 
 ## Quick sort
 COMPARE & FIND PIVOT INDEX + CREATE SUBSET + FIND PIVOT INDEX + MERGE
+
 Works by selection on element (called pivot) and its index where the pivot end up in the sorted array, and use the pivot to create two subset (left to pivot and right to pivot). Apply the same rule till the subset reaches to length 1.
+
 
 The logic behind this is, while selecting pivot value, system finds the right index for the pivot. so at the end of each pivot selection, we get the right index for the element and merge them together.
 
