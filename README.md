@@ -18,6 +18,8 @@ Learning algorithms and examples in js
   * [Binary search](https://github.com/vishnukumarbp/algorithmsjs#binary-search)
   * [Naive/Basic String Search](https://github.com/vishnukumarbp/algorithmsjs#naivebasic-string-search)
   * [Kunth Moriss Pratt String matching algorithm](https://github.com/vishnukumarbp/algorithmsjs#kunth-morris-pratt-string-matching-algorithm)
+- [Sorting algorithms](https://github.com/vishnukumarbp/algorithmsjs#sorting-algorithms)
+  * [Bubble sort](https://github.com/vishnukumarbp/algorithmsjs#bubble-sort)
   
 
 ## Big O notation:
@@ -561,3 +563,53 @@ To match (parse through entire string n once) - n
 **O (m + n)**
 
 [Refer video](https://www.youtube.com/watch?v=V5-7GzOfADQ)
+
+
+## Sorting algorithms
+Sorting is a process of arranging items in a collection (for eg: array) in ascending or decending order
+
+
+## Bubble sort
+A sorting algorithm where the largest value bubble up to the top. Time complexity is O(n^2)
+
+To visualize, refer [visualgo.net](https://visualgo.net/en)
+
+**Basic algorithm:**
+
+```javascript
+function bubbleSort(arr) {
+    const swap = (idx1,idx2)=>{
+        [arr[idx1],arr[idx2]] = [arr[idx2], arr[idx1]];
+    }
+    for (let i = arr.length; i > 0; i--) {
+        for (let j = 0; j < i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(j, j + 1);
+            }
+        }
+    }
+    console.log(arr);
+}
+```
+
+
+**Optimize with noSwaps** This is the best case when the input array is nearly sorted
+```javascript
+function bubbleSort(arr) {
+    let noSwap;
+    const swap = (idx1,idx2)=>{
+        [arr[idx1],arr[idx2]] = [arr[idx2], arr[idx1]];
+    }
+    for (let i = arr.length; i > 0; i--) {
+        noSwap = true;
+        for (let j = 0; j < i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(j, j + 1);
+                noSwap  = false;
+            }
+        }
+        if(noSwap) break;
+    }
+    console.log(arr);
+}
+```
